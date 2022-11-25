@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Table</title>
+    <style>
+        table {
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary_font: 11px;
+            --border: 0.5px solid black;
+            --h1_font: 15px;
+        }
+
+        .top tr {
+            margin: 5px 0px;
+        }
+
+        td,
+        th {
+            font-size: var(--primary_font);
+            text-align: center;
+            padding: 2px 2px;
+        }
+
+        .top td {
+            padding: 2px 3px;
+        }
+
+        td input {
+            width: 200px;
+        }
+
+        h1 {
+            font-size: var(--h1_font);
+            text-align: center;
+            margin: 10px;
+        }
+
+        .flex_row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .table th,
+        .table td {
+            border: var(--border);
+            margin: 0px;
+            border-spacing: 0px;
+            padding: 2px 5px;
+        }
+        .table th{
+            background-color: aliceblue;
+        }
+
+        .table {
+            width: 670px;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        .btn{
+            padding: 3px 4px;
+            display: block;
+            margin: 15px auto;
+            color: black;
+            background-color: rgba(190, 177, 177, 0.3);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: 0.5px solid black;
+        }
+        .btn:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>List of Letters</h1>
+    <div class="flex_row">
+        <table class="top">
+            <tbody>
+                <tr>
+                    <td>Loan Status : </td>
+                    <td><input type="text"></td>
+                    <td>Loan No : </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Date from : </td>
+                    <td><input type="date"></td>
+                    <td>Date to : </td>
+                    <td><input type="date"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="btn">Search</button>
+    <div class="body_main flex_row">
+        <div class="table">
+            <table>
+                <tr>
+                    <th>S.N</th>
+                    <th>Loan No.</th>
+                    <th>Sanction Letter</th>
+                    <th>Loan Agreement</th>
+                    <th>Loan Summary</th>
+                    <th>Promissory Note</th>
+                    <th>Disb. of Loan Amount</th>
+                    <th>Appli. Form for loan</th>
+                    <th>Foreclosure Letter</th>
+                    <th>Print-NOC</th>
+                    <th>Print-LOD</th>
+                    <th>Print-Forms</th>
+                    <th>Pending-Payments</th>
+                    <th>Delivery-Order</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>00180100136</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td class="pointer">Print</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
